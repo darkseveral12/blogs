@@ -18,7 +18,7 @@ function App() {
     setIsModalOpen(true);
   };
 
-  const openModalForEdit = () => {
+  const openModalForEdit = (blog: Blog) => {
     setEditingBlog(blog);
     setIsModalOpen(true);
   };

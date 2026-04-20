@@ -66,6 +66,13 @@ const BlogForm = ({ existingBlog, onClose }: BlogFormProp) => {
             className="block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-black "
           />
 
+          <input
+            type="date"
+            placeholder="Time"
+            onChange={(e) => setTime(e.target.value)}
+            className="block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-black "
+          />
+
           <section className="flex justify-end mt-6 space-x-4">
             <button
               onClick={handleSubmit}
