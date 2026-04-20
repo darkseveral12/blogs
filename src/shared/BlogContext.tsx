@@ -1,5 +1,5 @@
 import { createContext, useState, useContext } from "react";
-import type { Blog } from "../../types";
+import type { Blog } from "../types";
 
 interface BlogContextType {
   blogs: Blog[];

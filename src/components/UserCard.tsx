@@ -6,13 +6,12 @@ interface peopleToFollowInfo {
 }
 
 interface UserCardProp {
-  key: number;
   person: peopleToFollowInfo;
 }
 
-const UserCard = ({ key, person }: UserCardProp) => {
+const UserCard = ({ person }: UserCardProp) => {
   return (
-    <div key={key} className="flex items-center justify-between">
+    <div className="flex items-center justify-between">
       <section className="flex items-center">
         <FaUserCircle className="text-3xl mr-3 text-gray-500" />
         <span>{person.name}</span>
